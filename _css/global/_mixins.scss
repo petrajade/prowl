@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+//Mixins 
+
+$iphone-width: 667px;
+
+@mixin iphone {
+  @media (max-device-width: #{$iphone-width}) {
+    @content;
+  }
+}
+
+
+

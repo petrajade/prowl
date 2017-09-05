@@ -1,0 +1,227 @@
+@charset "UTF-8";
+//index.html
+.indexBody {
+    background: url(../_img/prowl_stadium.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #000;
+}
+
+.indexBackgroundImg {
+    position: relative;
+    margin-bottom: -5px;
+    top: 0;
+    height: 100%;
+}
+
+.indexBodyContainer {
+    position: relative;
+    margin-bottom: -5px;
+    top: 0;
+    height: 100%;
+}
+
+.indexLogoIcon {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: 100px;
+    width: 100px;
+
+	@include iphone {
+		margin-left: -100px;
+		width: 200px;
+	}
+}
+
+.indexLogoName {
+    position: absolute;
+    left: 50%;
+    margin-left: -95px;
+    top: 230px;
+    width: 190px;
+
+    @include iphone {
+    	top: 350px;
+		margin-left: -190px;
+		width: 380px;
+	}
+}
+
+.indexHeader {
+    position: absolute;
+    top: 255px;
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 300;
+    color: #fff;
+
+    @include iphone {
+    	top: 445px;
+		font-size: 50px;
+	}
+}
+
+.emailFormContainer {
+    position: absolute;
+    width: 500px;
+    top: 400px;
+    left: 50%;
+    margin-left: -250px;
+
+    @include iphone {
+    	width: 700px;
+		top: 650px;
+		margin-left: -350px;
+	}
+}
+
+.greyBgFormContainer {
+    height: 50px;
+    width: 100%;
+    background-color: $darkGrey;
+    border: 1 solid;
+    border-radius: 3px;
+
+    @include iphone {
+		height: 100px;
+
+		border: 1 solid;
+    	border-radius: 8px;
+	}
+}
+
+#emailInput {
+    float: left;
+    padding: 0;
+    margin: 0;
+    margin-top: 4px;
+    margin-left: 15px;
+    height: 50px;
+    width: 370px;
+
+    @include iphone {
+    	margin-top: 30px;
+    	margin-left: 35px;
+
+    	height: 100px;
+		width: 450px;
+	}
+}
+
+#enterButtonContainer {
+    float: right;
+    height: 40px;
+    width: 95px;
+    margin-top: 5px;
+    margin-right: 5px;
+
+    @include iphone {
+    	height: 90px;
+		width: 195px;
+	}
+}
+
+.input-field input[type=email] {
+    border-bottom: 0px solid $darkGrey;
+    box-shadow: 0 0px 0 0 $darkGrey;
+    color: #fff;
+
+    @include iphone {
+		font-size: 32px;
+    }
+}
+
+.input-field input[type=email]:focus {
+    border-bottom: 0px solid $darkGrey;
+    box-shadow: 0 0px 0 0 $darkGrey;
+    color: #fff;
+
+    @include iphone {
+		font-size: 32px;
+    }
+}
+
+.btnContainer {
+    float: right;
+}
+
+.submitBtn {
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    width: 95px;
+    background-color: $baseRed;
+    color: $darkRed;
+    font-family: 'roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    outline: none;
+    border: 0 solid;
+    border-radius: 3px;
+
+    @include iphone {
+    	height: 90px;
+		width: 195px;
+		
+		font-size: 36px;
+
+		border: 0 solid;
+    	border-radius: 8px;
+	}
+}
+
+.submitBtn:focus {
+    outline: none;
+    color: #fff;
+}
+
+.input-field input[type=submit] {
+    border-bottom: none;
+    box-shadow: none;
+    border: none;
+}
+
+.input-field label {
+    color: #fff;
+}
+
+.input-field input[type=email]:focus + label {
+    color: #fff;
+}
+
+.input-field input[type=email].valid {
+    border-bottom: 0px solid $darkGrey;
+    color: #fff;
+}
+
+.input-field input[type=email].invalid {
+    border-bottom: 0px solid $darkGrey;
+    color: #fff;
+}
+
+.emailSubText {
+    clear: both;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #4a4a4a;
+
+    @include iphone {
+    	font-size: 28px;
+	}
+}
+
+.footerBar {
+    position: relative;
+    height: 5px;
+    background-color: $baseRed;
+
+    @include iphone {
+        height: 0;
+    }
+}
